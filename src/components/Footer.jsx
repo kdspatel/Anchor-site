@@ -78,21 +78,16 @@ export default function Footer() {
           viewport={{ once: true }}
           className="hidden md:block text-5xl lg:text-8xl font-bold tracking-[0.2em] absolute bottom-14 lg:bottom-12 whitespace-nowrap pointer-events-none"
         >
-          VAISHNAVI SHILWANT
+          VAISHNAVI PANCHAL
         </motion.h3>
 
         {/* DIVIDER */}
         <div className="w-full h-[1px] bg-white/10 mt-6 sm:mt-10 md:mt-16 pointer-events-none" />
 
         {/* COPYRIGHT */}
-<<<<<<< HEAD
         <p className="text-[10px] sm:text-xs text-gray-500 text-center leading-relaxed px-2 pointer-events-none">
-          © {new Date().getFullYear()} Vaishnavi Panchal. Designed to
+          © {new Date().getFullYear()} Vaishnavi Panchal. All rights reserved. 
           perform.
-=======
-        <p className="text-[10px] sm:text-xs text-gray-500 pointer-events-none">
-          © {new Date().getFullYear()} Vaishnavi Shilwant. Designed to perform.
->>>>>>> 4e7b4ee5e3e7834f7e9bac713d407e98eb826bbb
         </p>
       </div>
     </footer>

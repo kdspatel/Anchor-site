@@ -83,14 +83,9 @@ export default function About() {
 
           {/* 📸 Socials */}
           <div className="mt-6 flex justify-center md:justify-start gap-4">
-
             {/* Instagram */}
             <a
-<<<<<<< HEAD
               href="https://instagram.com/anchor_vaishnavi_panchal"
-=======
-              href="https://www.instagram.com/anchor_vaishnavi_shilwant?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
->>>>>>> 4e7b4ee5e3e7834f7e9bac713d407e98eb826bbb
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-3 px-4 py-2 rounded-full border border-white/10 bg-white/5 hover:bg-yellow-500/10 hover:shadow-[0_0_20px_rgba(234,179,8,0.25)] transition"
@@ -108,37 +103,10 @@ export default function About() {
                 <circle cx="17.5" cy="6.5" r="1" />
               </svg>
 
-<<<<<<< HEAD
               <span className="text-xs sm:text-sm text-white/70 group-hover:text-white transition">
                 @anchor_vaishnavi_panchal
-=======
-              <span className="text-sm text-white/70 group-hover:text-white transition">
-                @anchor_vaishnavi_shilwant
->>>>>>> 4e7b4ee5e3e7834f7e9bac713d407e98eb826bbb
               </span>
             </a>
-
-            {/* YouTube */}
-            <a
-              href="https://www.youtube.com/@anchor_vaishnavi_shilwant"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-3 px-4 py-2 rounded-full border border-white/10 bg-white/5 hover:bg-yellow-500/10 hover:shadow-[0_0_20px_rgba(234,179,8,0.25)] transition"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-5 h-5 text-yellow-500 group-hover:scale-110 transition"
-              >
-                <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2.1-.9C16.1 5 12 5 12 5h0s-4.1 0-6.9.1c-.4.1-1.3.1-2.1.9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.6C2 14.4 2.2 16 2.2 16s.2 1.4.8 2c.8.8 1.9.8 2.4.9 1.7.2 6.6.2 6.6.2s4.1 0 6.9-.1c.4-.1 1.3-.1 2.1-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.6C22 9.6 21.8 8 21.8 8zM9.8 14.6V9.4l5.2 2.6-5.2 2.6z" />
-              </svg>
-
-              <span className="text-sm text-white/70 group-hover:text-white transition">
-                YouTube
-              </span>
-            </a>
-
           </div>
 
           {/* Stats */}
