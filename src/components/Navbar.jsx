@@ -26,7 +26,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <h1 className="text-lg font-semibold tracking-widest text-[#F5EFE7]">
-          VP
+          VS
         </h1>
 
         {/* 💻 DESKTOP MENU */}
