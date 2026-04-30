@@ -74,7 +74,7 @@ export default function Footer() {
           transition={{ duration: 1 }}
           className="hidden md:block text-6xl lg:text-8xl font-bold tracking-widest absolute bottom-12 pointer-events-none"
         >
-          VAISHNAVI PANCHAL
+          VAISHNAVI SHILWANT
         </motion.h3>
 
         {/* DIVIDER */}
@@ -82,7 +82,7 @@ export default function Footer() {
 
         {/* COPYRIGHT */}
         <p className="text-[10px] sm:text-xs text-gray-500 pointer-events-none">
-          © {new Date().getFullYear()} Vaishnavi Panchal. Designed to perform.
+          © {new Date().getFullYear()} Vaishnavi Shilwant. Designed to perform.
         </p>
       </div>
     </footer>
