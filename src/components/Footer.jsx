@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer
       ref={ref}
-      className="relative bg-[#050505] text-white overflow-hidden pt-20 sm:pt-24 md:pt-32 pb-8 sm:pb-10 px-4 sm:px-6 cursor-default select-none"
+      className="relative bg-[#050505] text-white overflow-hidden pt-24 md:pt-32 pb-10 px-5 md:px-6 cursor-default select-none"
     >
       {/* ✨ TOP LINE */}
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-yellow-600 to-transparent opacity-30 pointer-events-none" />
@@ -24,17 +24,17 @@ export default function Footer() {
       {/* ✨ GLOW */}
       <motion.div
         style={{ opacity: glow }}
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[95%] sm:w-[85%] md:w-[700px] h-[160px] sm:h-[200px] md:h-[250px] bg-yellow-500 blur-[100px] sm:blur-[130px] md:blur-[160px] rounded-full pointer-events-none"
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[90%] md:w-[700px] h-[200px] md:h-[250px] bg-yellow-500 blur-[140px] md:blur-[160px] rounded-full pointer-events-none"
       />
 
-      <div className="max-w-4xl mx-auto flex flex-col items-center text-center gap-8 sm:gap-10 md:gap-14 relative z-10">
+      <div className="max-w-4xl mx-auto flex flex-col items-center text-center gap-10 md:gap-14 relative z-10">
         {/* 🔥 HEADING */}
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug md:leading-tight px-2 pointer-events-none"
+          className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug md:leading-tight pointer-events-none"
         >
           Every Event Has a Moment{" "}
           <span className="text-yellow-500">
@@ -48,7 +48,7 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-md md:max-w-xl px-2 pointer-events-none"
+          className="text-gray-400 text-sm sm:text-base max-w-md md:max-w-xl pointer-events-none"
         >
           From weddings to corporate stages — the energy, the emotion,
           the experience — all crafted to leave a lasting impact.
@@ -59,7 +59,7 @@ export default function Footer() {
           href="#booking"
           whileHover={{ scale: 1.06 }}
           whileTap={{ scale: 0.95 }}
-          className="relative px-7 sm:px-10 py-3.5 sm:py-4 rounded-full bg-yellow-500 text-black font-semibold text-sm sm:text-base md:text-lg overflow-hidden group cursor-pointer"
+          className="relative px-10 py-4 rounded-full bg-yellow-500 text-black font-semibold text-base md:text-lg overflow-hidden group cursor-pointer"
           style={{ cursor: "pointer" }}
           draggable={false}
         >
@@ -76,18 +76,17 @@ export default function Footer() {
           whileInView={{ opacity: 0.05 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="hidden md:block text-5xl lg:text-8xl font-bold tracking-[0.2em] absolute bottom-14 lg:bottom-12 whitespace-nowrap pointer-events-none"
+          className="hidden md:block text-6xl lg:text-8xl font-bold tracking-widest absolute bottom-12 pointer-events-none"
         >
           VAISHNAVI PANCHAL
         </motion.h3>
 
         {/* DIVIDER */}
-        <div className="w-full h-[1px] bg-white/10 mt-6 sm:mt-10 md:mt-16 pointer-events-none" />
+        <div className="w-full h-[1px] bg-white/10 mt-10 md:mt-16 pointer-events-none" />
 
         {/* COPYRIGHT */}
-        <p className="text-[10px] sm:text-xs text-gray-500 text-center leading-relaxed px-2 pointer-events-none">
-          © {new Date().getFullYear()} Vaishnavi Panchal. Designed to
-          perform.
+        <p className="text-[10px] sm:text-xs text-gray-500 pointer-events-none">
+          © {new Date().getFullYear()} Vaishnavi Panchal. Designed to perform.
         </p>
       </div>
     </footer>

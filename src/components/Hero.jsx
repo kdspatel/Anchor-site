@@ -88,7 +88,7 @@ export default function Hero() {
           transition={{ delay: 0.2, duration: 1 }}
           className="text-[52px] md:text-[100px] font-bold text-[#C8A96A] leading-none"
         >
-          Shilwant
+          PANCHAL
         </motion.h1>
 
         <motion.div
