@@ -12,15 +12,8 @@ const reels = [
 
 export default function Reels() {
   const [index, setIndex] = useState(0);
-  const [activeVideo, setActiveVideo] = useState<string | null>(null);
-  const [reactions, setReactions] = useState<
-    {
-      id: number;
-      icon: string;
-      side: string;
-      y: number;
-    }[]
-  >([]);
+  const [activeVideo, setActiveVideo] = useState(null);
+  const [reactions, setReactions] = useState([]);
 
   const prev = () => {
     setIndex((i) => (i === 0 ? reels.length - 1 : i - 1));
