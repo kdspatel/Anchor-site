@@ -236,59 +236,28 @@ const services = [
 export default function ServicesShowcase() {
   const [active, setActive] = useState(1);
   const isAnimating = useRef(false);
-  const sectionRef = useRef(null);
-  const [inView, setInView] = useState(false);
 
-  // 👀 detect when section is visible
+  // 🔁 AUTO SLIDE
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setInView(entry.isIntersecting);
-      },
-      { threshold: 0.6 } // 60% visible
-    );
-
-    if (sectionRef.current) observer.observe(sectionRef.current);
-
-    return () => observer.disconnect();
-  }, []);
-
-  // 🎯 controlled scroll
-  useEffect(() => {
-    const handleWheel = (e) => {
-      if (!inView) return;
-
-      const atStart = active === 0;
-      const atEnd = active === services.length - 1;
-
-      // allow page scroll when finished
-      if ((atStart && e.deltaY < 0) || (atEnd && e.deltaY > 0)) {
-        return;
-      }
-
-      e.preventDefault(); // 🔥 lock page scroll
-
+    const interval = setInterval(() => {
       if (isAnimating.current) return;
+
       isAnimating.current = true;
 
-      if (e.deltaY > 0) {
-        setActive((prev) => Math.min(prev + 1, services.length - 1));
-      } else {
-        setActive((prev) => Math.max(prev - 1, 0));
-      }
+      setActive((prev) =>
+        prev === services.length - 1 ? 0 : prev + 1
+      );
 
       setTimeout(() => {
         isAnimating.current = false;
-      }, 900); // 🐢 slower control
-    };
+      }, 700); // match your animation speed
+    }, 3000);
 
-    window.addEventListener("wheel", handleWheel, { passive: false });
-    return () => window.removeEventListener("wheel", handleWheel);
-  }, [active, inView]);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section
-      ref={sectionRef}
       className="h-screen bg-[#050505] flex flex-col items-center justify-center relative overflow-hidden"
       id="services"
     >
