@@ -86,7 +86,7 @@ export default function Footer() {
 
         {/* COPYRIGHT */}
         <p className="text-[10px] sm:text-xs text-gray-500 text-center leading-relaxed px-2 pointer-events-none">
-          © {new Date().getFullYear()} Vaishnavi Panchal. All rights reserved. 
+          © {new Date().getFullYear()} Vaishnavi Panchal. Designed to
           perform.
         </p>
       </div>
