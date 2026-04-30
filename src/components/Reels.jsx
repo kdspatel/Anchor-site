@@ -83,7 +83,7 @@ export default function Reels() {
       </div>
 
       {/* TITLE */}
-      <div className="absolute top-10 sm:top-14 text-center z-20 px-4">
+      <div className="absolute top-6 sm:top-10 md:top-12 text-center z-20 px-4">
         <p className="text-[10px] sm:text-xs tracking-[3px] sm:tracking-[4px] text-gray-500">
           SOCIAL PRESENCE
         </p>
@@ -94,7 +94,7 @@ export default function Reels() {
       </div>
 
       {/* 🎬 REELS ROW */}
-      <div className="relative z-10 flex items-center justify-center gap-3 sm:gap-6 md:gap-8">
+      <div className="relative z-10 flex items-center justify-center gap-3 sm:gap-6 md:gap-8 mt-20 sm:mt-24 md:mt-28">
         {/* LEFT */}
         <div className="hidden sm:block w-[140px] md:w-[180px] lg:w-[200px] h-[260px] md:h-[320px] lg:h-[360px] rounded-3xl overflow-hidden blur-[1px] scale-90 opacity-50 rotate-[-8deg]">
           <video
