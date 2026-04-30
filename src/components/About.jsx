@@ -37,7 +37,7 @@ export default function About() {
           <div className="absolute w-[400px] h-[400px] bg-yellow-500/20 blur-[140px] rounded-full" />
 
           <img
-            src="/images/about.png"
+            src="/images/VP.png"
             alt="Vaishnavi Panchal"
             className="relative w-[320px] md:w-[420px] lg:w-[480px] rounded-3xl object-cover border border-white/10 shadow-2xl"
           />
